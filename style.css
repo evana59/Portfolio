@@ -15,19 +15,29 @@ body {
 @font-face {
     font-family: 'sant joan despi';
     src: url(https://dl.dropbox.com/s/sw0dp7szdorexg9/SantJoanDespi-Regular.otf);
-    }
+}
+a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+a:hover {
+    color:#FFD2DC;
+    text-decoration: underline;
+}
 #header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0px 10px #141414;
-    background-color: #252525;
+    box-shadow: 0px 2px #141414;
+    background: #252525;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    z-index: 10;
 
 }
 
@@ -110,7 +120,7 @@ body {
 
 #paragraph1 {
     font-family:'playfair-display';
-    font-size: 1.2em;
+    font-size: 1.9em;
     position: relative;
     left: -15%;
     line-height: 1.2;
@@ -176,19 +186,30 @@ body {
     top: 0;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
+
+.dotContainer {
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+    z-index: 100;
+}
   /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #FFD2DC;
+    border: 2px solid #b96a7d;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  /* Fading animation */
+}
+.dot:hover {
+    background-color: #CC7D90;
+}  
+ /* Fading animation */
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -198,3 +219,23 @@ body {
     from {opacity: .4}
     to {opacity: 1}
   }
+#leadership {
+    position: relative;
+    top: 200%;
+    align-content: center;
+}
+#leader {
+    font-family:'sant joan despi';
+    font-size: 4.5em;
+    background: -webkit-linear-gradient( #FFD2DC, #CC7D90);
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+#image3 {
+    object-fit: contain;
+    width: 500px;
+    position: relative;
+    bottom: 50%;
+}
