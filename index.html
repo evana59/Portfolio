@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<script src="myScript.js"></script>
-</script>
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -30,19 +28,19 @@
                 </div>
             </div>
                 <div id="image2">
-                    <div class="mySlides fade">
+                    <div class="mySlides fade" id="test">
                         <div class="numbertext">1 / 3</div>
                         <img src="portada_Hakui-Koyori-2.jpg" style="width:100%">
                         <div class="text">Caption Text</div>
                       </div>
                     
-                      <div class="mySlides fade">
+                      <div class="mySlides fade" id="test">
                         <div class="numbertext">2 / 3</div>
                         <img src="tumblr_8b1da2c0020aa0ff2dbfc5b17fa0984f_405b070b_1280.jpg" style="width:100%">
                         <div class="text">Caption Two</div>
                       </div>
                     
-                      <div class="mySlides fade">
+                      <div class="mySlides fade" id="test">
                         <div class="numbertext">3 / 3</div>
                         <img src="anm8454.jpg" style="width:100%">
                         <div class="text">Caption Three</div>
@@ -56,11 +54,13 @@
 
                       <!-- The dots/circles -->
                     <div style="text-align:center">
-                     <span class="dot" onclick="currentSlide(1)"></span>
+                     <span class="dot" onclick="currentSlide(0)"></span>
+                      <span class="dot" onclick="currentSlide(1)"></span>
                       <span class="dot" onclick="currentSlide(2)"></span>
-                      <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
         </div>
     </body>
+    <script src="myScript.js"></script>
 </html>
+
