@@ -1,0 +1,189 @@
+body {
+    background-color: #252525;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'sant joan despi';
+    src: url(https://dl.dropbox.com/s/sw0dp7szdorexg9/SantJoanDespi-Regular.otf);
+    }
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 10px #141414;
+    background-color: #252525;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+#container1 {
+    position: absolute;
+    left: 353px;
+    top: 40%;
+    z-index: 1;
+}
+
+#container2 {
+    position: absolute;
+    left: 55%;
+    top: 5%;
+}
+#image {
+    filter: drop-shadow(10px 0px 1px white);
+    box-shadow: 0px 10px white;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 540px;
+}
+
+#title {
+    font-family: 'playfair display';
+    font-size: 1.7em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: relative;
+    right:48%;
+    bottom: 5%;
+}
+
+#quote {
+    font-family:'sant joan despi';
+    font-size: 3.5em;
+    background: -webkit-linear-gradient(#FFD2DC, #FFFDFE);
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    right: 48%;
+}
+
+#subtext {
+    font-family: 'playfair display';
+    font-size: 1em;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: relative;
+    right:48%;
+    bottom: 20%;
+}
+
+#about {
+    position:absolute;
+    bottom: -80%;
+    background: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+#container3{
+    position: absolute;
+    left: 66%;
+}
+#about1 {
+    font-family:'sant joan despi';
+    font-size: 4.5em;
+    background: -webkit-linear-gradient( #FFD2DC, #CC7D90);
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: -20%;
+}
+
+#paragraph1 {
+    font-family:'playfair-display';
+    font-size: 1.2em;
+    position: relative;
+    left: -15%;
+    line-height: 1.2;
+}
+
+#image2 {
+    object-fit: contain;
+    width: 700px;
+    box-shadow: -10px 10px #CC7D90;
+    position: relative;
+    left: 2%;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
