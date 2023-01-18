@@ -25,6 +25,21 @@ a:hover {
     color:#FFD2DC;
     text-decoration: underline;
 }
+.parallax {
+    /* The image used */
+    background-position: 50% -350px !important;height: 600px;
+    background: linear-gradient(to top, #25252595, #14141495), url("273baa9e2e896b386c94fbd6753fd490.jpg");
+    background-size: 100%;
+    /* Set a specific height */
+    min-height: 2000px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -220,11 +235,13 @@ a:hover {
     to {opacity: 1}
   }
 #leadership {
-    position: relative;
-    top: 200%;
-    align-content: center;
+    position:absolute;
+    bottom: -164%;
+    width: 100%;
+    overflow: hidden;
+
 }
-#leader {
+#leader1 {
     font-family:'sant joan despi';
     font-size: 4.5em;
     background: -webkit-linear-gradient( #FFD2DC, #CC7D90);
@@ -232,10 +249,13 @@ a:hover {
         background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
+    left: 32%;
+    margin: 8px;
 }
 #image3 {
-    object-fit: contain;
-    width: 500px;
+    object-fit:cover;
+    width: 100%;
     position: relative;
-    bottom: 50%;
+    height: 350px;
+    overflow: hidden;
 }
