@@ -27,8 +27,9 @@ a:hover {
 }
 .parallax {
     /* The image used */
+    filter: blur(5px) brightness(30%);
     background-position: 50% -350px !important;height: 600px;
-    background: linear-gradient(to top, #25252595, #14141495), url("273baa9e2e896b386c94fbd6753fd490.jpg");
+    background: url("273baa9e2e896b386c94fbd6753fd490.jpg");
     background-size: 100%;
     /* Set a specific height */
     min-height: 2000px;
@@ -107,20 +108,14 @@ a:hover {
     bottom: 20%;
 }
 
-#about {
-    position:absolute;
-    bottom: -80%;
+#aboutship {
+    position: absolute;
     background: white;
+    top:100%;
     width: 100%;
     margin: 0;
     padding: 10px;
     overflow: hidden;
-
-}
-
-#container3{
-    position: absolute;
-    left: 66%;
 }
 #about1 {
     font-family:'sant joan despi';
@@ -130,7 +125,7 @@ a:hover {
         background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    left: -20%;
+    left: 60%;
 }
 
 #paragraph1 {
@@ -142,6 +137,9 @@ a:hover {
 }
 
 #image2 {
+    position: absolute;
+    bottom: -80%;
+    z-index: 10;
     object-fit: contain;
     width: 700px;
     box-shadow: -10px 10px #CC7D90;
@@ -236,9 +234,10 @@ a:hover {
   }
 #leadership {
     position:absolute;
-    bottom: -164%;
+    bottom: -153%;
     width: 100%;
     overflow: hidden;
+    background-color: white;
 
 }
 #leader1 {
